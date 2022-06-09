@@ -17,7 +17,7 @@
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="NEWS_FR.jsp" class="nav__link">UK</a>
+                    <a href="UK.jsp" class="nav__link">UK</a>
                 </li>
                 <li class="nav__item">
                     <a href="France.jsp" class="nav__link">France</a>

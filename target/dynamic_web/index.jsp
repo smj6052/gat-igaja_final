@@ -6,8 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="crawling.*" %>
-
+<%--<%@ page import="crawling.*" %>--%>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -36,7 +35,6 @@
   <!--==================== HOME ====================-->
   <section class="home" id="home">
     <img src="assets/img/goldengate.jpg" alt="" class="home__img">
-
     <div class="home__container container grid">
       <div class="home__data">
         <span class="home__data-subtitle">COVID-19</span>
@@ -45,24 +43,13 @@
     </div>
   </section>
 
+<%--  <%!  String sale="";%>--%>
 
-
-
-<%--  <% hello hello = new hello();--%>
-<%--   hello.hello();--%>
+<%--  <%! int a=0;%>--%>
+<%--  <%  Exchange_Rate bot1 = new Exchange_Rate("https://finance.naver.com/marketindex/exchangeList.naver");--%>
+<%--    sale = bot1.activateBot(2);--%>
 <%--  %>--%>
-
-
-  <%!  String sale="";%>
-
-  <%! int a=0;%>
-  <%  Exchange_Rate bot1 = new Exchange_Rate("https://finance.naver.com/marketindex/exchangeList.naver");
-    sale = bot1.activateBot(2);
-  %>
-  rate <%= sale%>
-
-
-
+<%--  rate <%= sale%>--%>
 
   <!--==================== ABOUT ====================-->
   <section class="about section" id="about">
@@ -73,7 +60,6 @@
           입국이 가능한 많은 국가 중 영국, 프랑스, 아랍, 필리핀, 호주, 미국에 대한 정보를 제공합니다.
         </p>
       </div>
-
       <div class="about__img">
         <div class="about__img-overlay">
           <img src="assets/img/burj.jpg" alt="" class="about__img-one">

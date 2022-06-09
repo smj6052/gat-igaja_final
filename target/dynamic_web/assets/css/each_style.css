@@ -1,3 +1,28 @@
+.each_home__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.f{
+    object-position: center 10%;
+}
+.a{
+    object-position: center 80%;
+}
+.us{
+    object-position: center 30%;
+}
+.arb{
+    object-position: center 70%;
+}
+.ph{
+    object-position: center 60%;
+}
+.uk{
+    object-position: center 70%;
+}
 
 .entry_info {
     position: relative;
