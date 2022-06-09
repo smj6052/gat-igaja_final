@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="crawling.*" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -40,24 +41,28 @@
     </section>
 
     <!--==================== 입국정보 ====================-->
+    <%!  String [] arrT= new String[5];%>
+    <%  TravelInfo botT = new TravelInfo("https://travel.naver.com/overseas/US191/country/prepare#hentrance");
+        arrT = botT.activateBot();
+    %>
     <section>
         <ul class="entry_info">
             <li>
                 <div class="condition">입국가능여부</div>
-                <div class="result">입국가능</div>
+                <div class="result"><%= arrT[0]%> </div>
             </li>
             <li>
                 <div class="condition">백신필수여부</div>
-                <div class="result">필수</div>
+                <div class="result"><%= arrT[1]%> </div>
             </li>
             <li>
                 <div class="condition">여행지격리여부</div>
-                <div class="result">격리면제</div>
+                <div class="result"><%= arrT[2]%> </div>
             </li>
             <li>
                 <div class="condition">한국 귀국시</div>
-                <div class="result2"><span>[백신 접종자] </span>격리면제<br>
-                    <span>[백신 미접종자] </span> 격리면제</div>
+                <div class="result2"><span>[백신 접종자] </span><%= arrT[3]%><br>
+                    <span>[백신 미접종자] </span> <%= arrT[4]%></div>
             </li>
         </ul>
     </section>
@@ -132,6 +137,11 @@
     </section>
 
     <!--==================== 코로나 상황 ====================-->
+    <%!  String [] arrC= new String[6];%>
+    <%  Covid botC = new Covid("https://news.google.com/covid19/map?hl=ko&mid=%2Fm%2F09c7w0&gl=KR&ceid=KR%3Ako");
+        arrC = botC.activateBot();
+    %>
+
     <section class="about section" >
         <div class="about__container container gird gap" id="f_covid">
             <div class="about__data covid_parent" >
@@ -142,10 +152,10 @@
                     </li>
                     <ul>
                         <li>
-                            <img src="//www.gstatic.com/covid-trends/images/NC14/_m_0f8l9c.svg" class="dt3Iuf zC7z7b FS6bed" loading="lazy" alt="14일 동향 차트" aria-label="14일 동향 차트">
+                            <img src="<%= arrC[0]%>" class="dt3Iuf zC7z7b FS6bed" loading="lazy" alt="14일 동향 차트" aria-label="14일 동향 차트">
                         </li>
                         <li>
-                            <strong>+179,140</strong>
+                            <%= arrC[4]%>
                         </li>
                     </ul>
                 </ul>
@@ -155,10 +165,10 @@
                     </li>
                     <ul>
                         <li>
-                            <img src="//www.gstatic.com/covid-trends/images/NC14/_m_0f8l9c_dark.svg" class="dt3Iuf krHqHb FS6bed" loading="lazy" alt="14일 동향 차트" aria-label="14일 동향 차트">
+                            <img src="<%= arrC[2]%>" class="dt3Iuf krHqHb FS6bed" loading="lazy" alt="14일 동향 차트" aria-label="14일 동향 차트">
                         </li>
                         <li>
-                            <strong>67.2%</strong>
+                            <%= arrC[5]%>
                         </li>
                     </ul>
                 </ul>
@@ -206,6 +216,10 @@
         </div>
     </section>
     <!--==================== 환율 ====================-->
+    <%!  String sale="";%>
+    <%  Exchange_Rate bot1 = new Exchange_Rate("https://finance.naver.com/marketindex/exchangeList.naver");
+        sale = bot1.activateBot(1);
+    %>
     <section class="about section" >
         <div class="about__container container gird gap" id="f_ex">
             <h2 class="section__title about__title"><span>환율 <i class="fa-solid fa-sack-dollar"></i></span></h2>
@@ -217,12 +231,105 @@
                 <tr>
                     <td class="tg-0pky" colspan="4">1 USD</td>
                     <!-- 환율 정보 입력 -->
-                    <td class="tg-0pky" colspan="4">1,336.11 원</td>
+                    <td class="tg-0pky" colspan="4"><%= sale%>  원</td>
                 </tr>
             </table>
         </div>
     </section>
     <section class="gap"></section>
+
+    <!--==================== 맛집 ====================-->
+    <%!  String [] arrR= new String[21];%>
+    <%  Restaurant botR = new Restaurant("https://www.yelp.com/search?find_desc=Restaurants&find_loc=%08new+york");
+        arrR = botR.activateBot();
+    %>
+    <section class="place section" id="place">
+        <div class="about__container container gird gap" id="uk_rest">
+            <h2 class="section__title about__title">맛집 <i class="fa-solid fa-utensils"></i></h2>
+
+            <div class="place__container container grid">
+                <!------맛집1------>
+                <div class="place__card">
+                    <img src="<%= arrR[10]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 style="margin-top: 7em; color:white;"><%= arrR[0]%></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="<%= arrR[11]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;" ><%= arrR[1]%></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="<%= arrR[12]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;"><%= arrR[2]%></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="<%= arrR[13]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;"><%= arrR[3]%></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="<%= arrR[14]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title" style="margin-top: 7em;"><%= arrR[4]%></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="<%= arrR[15]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;"><%= arrR[5]%></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="<%= arrR[16]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;"><%= arrR[6]%></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="<%= arrR[17]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;"><%= arrR[7]%></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="<%= arrR[18]%>" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;"><%= arrR[8]%></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </main>
 
