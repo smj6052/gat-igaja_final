@@ -249,8 +249,8 @@
 <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script src="assets/js/chart/aus_chart.js"></script>
-<script src="assets/js/map.js"></script>
-<script src="assets/js/Weather.js"></script>
+<script src="assets/js/fr_map.js"></script>
+<script src="assets/js/fr_weather.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWNwND17k49S529e1b23yG20JexwvWPKs&callback=initMap&v=weekly" defer></script>
 </body>
 </html>
