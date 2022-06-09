@@ -224,6 +224,105 @@
     </section>
     <section class="gap"></section>
 
+    <!--==================== 맛집 ====================-->
+    <section class="place section" id="place">
+        <div class="about__container container gird gap" id="f_rest">
+            <h2 class="section__title about__title">맛집 <i class="fa-solid fa-utensils"></i></h2>
+
+            <div class="place__container container grid">
+                <!------맛집1------>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/25/08/0a/le-cheddar.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 style="margin-top: 7em; color:white;">Il Etait Un Square<br>
+                                3,792<br>
+                                $ - $$ • 프랑스 요리, 스테이크하우스, 유럽 요리<br>
+                                파리, 프랑스</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/7b/97/b5/strlng.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;" >프랑스</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/30/f9/2e/bouchon-tupin.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">아랍</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/90/45/b2/hall-1.jpg?w=400&h=-1&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">필리핀</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/14/54/24/photo0jpg.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title" style="margin-top: 7em;">호주</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/f2/5b/96/sesame-noir.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/c4/67/5c/black-bean-chili.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/4a/f2/75/getlstd-property-photo.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/32/a5/0f/img-20201018-180218-largejpg.jpg?w=400&h=-1&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ad/80/4a/le-pompon.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
 
 <!--=============== FOOTER ===============-->
