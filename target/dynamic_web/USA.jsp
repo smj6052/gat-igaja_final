@@ -100,7 +100,7 @@
         </div>
         <div class="box">
             <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="맛집"><span>맛집 <i class="fa-solid fa-utensils"></i></span></button>
-            <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick"onClick="location.href='NEWS_USA.jsp'"data-text="뉴스"><span>뉴스 <i class="fa-solid fa-newspaper"></i> </span></button>
+            <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick"onClick="location.href='NEWS_USA.jsp'" data-text="뉴스"><span>뉴스 <i class="fa-solid fa-newspaper"></i> </span></button>
             <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="리뷰"><span>리뷰 <i class="fa-solid fa-comment-dots"></i></span></button>
         </div>
     </div>

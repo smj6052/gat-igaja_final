@@ -102,7 +102,7 @@
         <div class="box">
             <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="맛집"
                     onClick="location.href='#arb_rest'"><span>맛집 <i class="fa-solid fa-utensils"></i></span></button>
-            <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="뉴스"><span>뉴스 <i class="fa-solid fa-newspaper"></i> </span></button>
+            <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" onClick="location.href='NEWS_ARAB.jsp'"data-text="뉴스"><span>뉴스 <i class="fa-solid fa-newspaper"></i> </span></button>
             <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="리뷰"><span>리뷰 <i class="fa-solid fa-comment-dots"></i></span></button>
         </div>
     </div>
@@ -338,8 +338,8 @@
 <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script src="assets/js/chart/arb_chart.js"></script>
-<script src="assets/js/map.js"></script>
-<script src="assets/js/Weather.js"></script>
+<script src="assets/js/map/arab_map.js"></script>
+<script src="assets/js/weather/arab_weather.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWNwND17k49S529e1b23yG20JexwvWPKs&callback=initMap&v=weekly" defer></script>
 </body>
 </html>
