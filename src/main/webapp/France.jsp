@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: SeoMinjung
-  Date: 2022-05-31
-  Time: 오후 1:37
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -35,7 +29,7 @@
 <main class="main">
     <!--==================== HOME ====================-->
     <section class="home" id="home">
-        <img src="assets/img/france_main.jpg" alt="france" class="each_home__img">
+        <img src="assets/img/france_main.jpg" alt="france" class="each_home__img f">
 
         <div class="each_home__container container grid">
             <div class="home__data">
@@ -64,7 +58,7 @@
             <li>
                 <div class="condition">한국 귀국시</div>
                 <div class="result2"><span>[백신 접종자] </span>격리면제<br>
-                    <span>[백신 미접종자] </span> 7일간 격리필요</div>
+                    <span>[백신 미접종자] </span>격리면제</div>
             </li>
         </ul>
     </section>
@@ -104,7 +98,8 @@
                     onClick="location.href='#f_ex'"><span>환율 <i class="fa-solid fa-sack-dollar"></i></span></button>
         </div>
         <div class="box">
-            <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="맛집"><span>맛집 <i class="fa-solid fa-utensils"></i></span></button>
+            <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="맛집"
+                    onClick="location.href='#f_rest'"><span>맛집 <i class="fa-solid fa-utensils"></i></span></button>
             <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="뉴스"><span>뉴스 <i class="fa-solid fa-newspaper"></i> </span></button>
             <button class="button1 button--winona button--border-thick button--round-l button--text-upper button--text-thick" data-text="리뷰"><span>리뷰 <i class="fa-solid fa-comment-dots"></i></span></button>
         </div>
@@ -133,6 +128,7 @@
     </section>
 
     <!--==================== 코로나 상황 ====================-->
+    <!---스크래핑 정보 필요-->
     <section class="about section" >
         <div class="about__container container gird gap" id="f_covid">
             <div class="about__data covid_parent" >
@@ -156,25 +152,16 @@
                     </li>
                     <ul>
                         <li>
-                            <img src="//www.gstatic.com/covid-trends/images/NC14/_m_0f8l9c_dark.svg" class="dt3Iuf krHqHb FS6bed" loading="lazy" alt="14일 동향 차트" aria-label="14일 동향 차트">
+                            <img src="데이터 없음" class="dt3Iuf krHqHb FS6bed" loading="lazy" alt="14일 동향 차트" aria-label="14일 동향 차트">
                         </li>
                         <li>
-                            5월 17일~30일: <strong>+408,785</strong>
+                            데이터 없음
                         </li>
                     </ul>
                 </ul>
                 <span class="source">출처: OWID, 존스 홉킨스 대학교</span>
                 <ul class="covid" style="margin-bottom: 10vh;">
-                    <h4 style="margin-bottom: 2vh">코로나 관련 소식<br></h4>
-                    <li>
-                        <a href="https://news.google.com/search?q=%ED%94%84%EB%9E%91%EC%8A%A4%20%EC%BD%94%EB%A1%9C%EB%82%98%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako/articles/CAIiEGoMLx0XX0KdbORNUzMYhMwqGQgEKhAIACoHCAow_NylCzDU570DMMWVjQc?uo=CAUiO2h0dHA6Ly93d3cubmV3c2tvcmVhLm5lLmtyL25ld3MvYXJ0aWNsZVZpZXcuaHRtbD9pZHhubz01Njgz0gEA&amp;hl=ko&amp;gl=KR&amp;ceid=KR%3Ako" class="DY5T1d RZIKme">유럽에선 코로나는 이제 지나간 이야기 &lt; 프랑스 &lt; 서유럽 &lt; 뉴스 &lt; 기사본문 - 세계속의 한국뉴스 NEWS KOREA</a>
-                    </li>
-                    <li>
-                        <a href="https://news.google.com/search?q=%ED%94%84%EB%9E%91%EC%8A%A4+%EC%BD%94%EB%A1%9C%EB%82%98+when:7d&hl=ko&gl=KR&ceid=KR:ko&hl=ko&gl=KR/articles/CAIiEJOFDDgFlZYQ3ikYZqMxOXYqFwgEKg8IACoHCAowuPuBAjCdthcwy9Mr?uo=CAUiSGh0dHBzOi8vd3d3LnJmYS5vcmcva29yZWFuL2luX2ZvY3VzL25rX251Y2xlYXJfdGFsa3MtMDUzMTIwMjIxNjI4NTcuaHRtbNIBAA&amp;hl=ko&amp;gl=KR&amp;ceid=KR%3Ako" class="DY5T1d RZIKme">코백스 “북 코로나 상황 명확히 알아야 백신 제공 가능”</a>
-                    </li>
-                    <li>
-                        <a href="https://news.google.com/search?q=%ED%94%84%EB%9E%91%EC%8A%A4+%EC%BD%94%EB%A1%9C%EB%82%98+when:7d&hl=ko&gl=KR&ceid=KR:ko&hl=ko&gl=KR/articles/CBMiL2h0dHBzOi8vd3d3LnluYS5jby5rci92aWV3L0FLUjIwMjIwNTI2MDYxOTAwMDA30gExaHR0cHM6Ly9tLnluYS5jby5rci9hbXAvdmlldy9BS1IyMDIyMDUyNjA2MTkwMDAwNw?hl=ko&amp;gl=KR&amp;ceid=KR%3Ako" class="DY5T1d RZIKme">작년 프랑스오픈 2관왕 크레이치코바, 코로나19 확진으로 기권</a>
-                    </li>
+                    <h4 style="margin-bottom: 2vh"><a href="https://news.google.com/search?q=%ED%94%84%EB%9E%91%EC%8A%A4%20%EC%BD%94%EB%A1%9C%EB%82%98%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako">최신 코로나 관련 뉴스 확인하기</a>></h4>
                 </ul>
             </div>
         </div>
@@ -196,7 +183,7 @@
                         <b>추천 옷차림</b> : 실시간 날씨 체크가 중요하다. 봄이나 가을에는 여름처럼 덥다가도 다음날 온도가 10도 이상 떨어져 두꺼운 재킷이 필요할 때도 있고, 여름에도 비가 오면 제법 쌀쌀해져 얇은 재킷이 필요할 수도. 일교차도 큰 편이니 최저기온과 최고기온을 함께 확인 하자.
                     </li>
                 </ul>
-                <canvas class="line_chart" id="line-chart" ></canvas>
+                <canvas class="line_chart" id="line-chart_f" ></canvas>
             </div>
             <div class="info_img" style="width: 40%; float: right;">
                 <!-- 날씨 api container에 받아옴 -->
@@ -231,6 +218,105 @@
     </section>
     <section class="gap"></section>
 
+    <!--==================== 맛집 ====================-->
+    <section class="place section" id="place">
+        <div class="about__container container gird gap" id="f_rest">
+            <h2 class="section__title about__title">맛집 <i class="fa-solid fa-utensils"></i></h2>
+
+            <div class="place__container container grid">
+                <!------맛집1------>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/25/08/0a/le-cheddar.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 style="margin-top: 7em; color:white;">Il Etait Un Square<br>
+                                3,792<br>
+                                $ - $$ • 프랑스 요리, 스테이크하우스, 유럽 요리<br>
+                                파리, 프랑스</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/7b/97/b5/strlng.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;" >프랑스</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/30/f9/2e/bouchon-tupin.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">아랍</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/90/45/b2/hall-1.jpg?w=400&h=-1&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">필리핀</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/14/54/24/photo0jpg.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title" style="margin-top: 7em;">호주</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/f2/5b/96/sesame-noir.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/c4/67/5c/black-bean-chili.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/4a/f2/75/getlstd-property-photo.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/32/a5/0f/img-20201018-180218-largejpg.jpg?w=400&h=-1&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ad/80/4a/le-pompon.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
 
 <!--=============== FOOTER ===============-->
@@ -248,7 +334,7 @@
 <!--=============== MAIN JS ===============-->
 <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<script src="assets/js/country.js"></script>
+<script src="assets/js/chart/f_chart.js"></script>
 <script src="assets/js/fr_map.js"></script>
 <script src="assets/js/fr_weather.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWNwND17k49S529e1b23yG20JexwvWPKs&callback=initMap&v=weekly" defer></script>
