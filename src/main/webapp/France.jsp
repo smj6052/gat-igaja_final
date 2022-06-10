@@ -109,27 +109,41 @@
     <section class="about section" id="f_info">
         <div class="about__container container gird">
             <h2 class="section__title about__title">여행 정보 <i class="fa-solid fa-plane"></i></h2>
-            <div class="about__data" style="width: 55%; float: left; margin-right: 1em;">
+            <div class="info_img" style="width: 40%; float: left; margin-left: -2em;">
+                <div id="map"></div>
+            </div>
+            <div class="about__data" style="width: 55%; float: right; ">
                 <ul class="about__description">
-                    <li>임시로 어쩌구저쩌구</li>
-                    <li>
-                        <b>여행 추천기간</b> :  4월~5월 / 9~10월
-                        <br>봄과 가을이 우리에게 가장 친숙한 날씨이다. 다만 일교차가 크니 얇은 겉옷은 항상 챙기도록 하자. 연평균 기온은 11.3도. 가장 더운 달은 7월로 평균 20도, 가장 추운 달은 1월로 5도 정도 된다. 연중 강우량이 높으며 비가 오는 날에도 건조한 편. 겨울에는 온도가 0도 이하로 내려가거나 눈이 내리는 날은 드물다.
+                    <li style="float: left; margin-right:0.5em">
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-plane-departure"></i>  항공</h3> <br>직항 <b>12시간</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-brands fa-cc-visa"></i>  비자</h3> <br>90일 <b>무비자</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-plug"></i>  전압</h3> <br>50hz <b>230V</b></li>
+                        </ul>
                     </li>
-                    <li>
-                        <b>추천 옷차림</b> : 실시간 날씨 체크가 중요하다. 봄이나 가을에는 여름처럼 덥다가도 다음날 온도가 10도 이상 떨어져 두꺼운 재킷이 필요할 때도 있고, 여름에도 비가 오면 제법 쌀쌀해져 얇은 재킷이 필요할 수도. 일교차도 큰 편이니 최저기온과 최고기온을 함께 확인 하자.
+                    <li style="float: left">
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-language"></i>  언어</h3> <br> <b>프랑스어</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-clock"></i>  시차</h3> <br>한국대비 <b>7시간 느림</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-coins"></i>  팁</h3> <br>있음 <b>10~15%</b></li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-            <div class="info_img" style="width: 40%; float: right;">
-                <div id="map"></div>
             </div>
         </div>
     </section>
 
     <!--==================== 코로나 상황 ====================-->
     <!---스크래핑 정보 필요-->
-    <section class="about section" >
+    <section class="about section" style="margin-top: 20em;">
         <div class="about__container container gird gap" id="f_covid">
             <div class="about__data covid_parent" >
                 <h2 class="section__title about__title">코로나 상황 <i class="fa-solid fa-virus"></i></h2>
@@ -161,7 +175,8 @@
                 </ul>
                 <span class="source">출처: OWID, 존스 홉킨스 대학교</span>
                 <ul class="covid" style="margin-bottom: 10vh;">
-                    <h4 style="margin-bottom: 2vh"><a href="https://news.google.com/search?q=%ED%94%84%EB%9E%91%EC%8A%A4%20%EC%BD%94%EB%A1%9C%EB%82%98%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako">최신 코로나 관련 뉴스 확인하기</a>></h4>
+                    <h4 style="margin-bottom: 2vh"><a href="https://news.google.com/search?q=%ED%94%84%EB%9E%91%EC%8A%A4%20%EC%BD%94%EB%A1%9C%EB%82%98%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako">최신 코로나 관련 뉴스 확인하기 [click!]
+                    </a></h4>
                 </ul>
             </div>
         </div>
@@ -176,8 +191,8 @@
             <div class="about__data" style="width: 55%; float: left; margin-right: 1em;">
                 <ul class="about__description">
                     <li>
-                        <b>여행 추천기간</b> :  4월~5월 / 9~10월
-                        <br>봄과 가을이 우리에게 가장 친숙한 날씨이다. 다만 일교차가 크니 얇은 겉옷은 항상 챙기도록 하자. 연평균 기온은 11.3도. 가장 더운 달은 7월로 평균 20도, 가장 추운 달은 1월로 5도 정도 된다. 연중 강우량이 높으며 비가 오는 날에도 건조한 편. 겨울에는 온도가 0도 이하로 내려가거나 눈이 내리는 날은 드물다.
+                        <b>여행 추천기간</b> :  4월~5월 / 9~10월 <br>
+                        <br>봄과 가을이 우리에게 가장 친숙한 날씨이다. 다만 일교차가 크니 얇은 겉옷은 항상 챙기도록 하자. 연평균 기온은 11.3도. 가장 더운 달은 7월로 평균 20도, 가장 추운 달은 1월로 5도 정도 된다. 연중 강우량이 높으며 비가 오는 날에도 건조한 편. 겨울에는 온도가 0도 이하로 내려가거나 눈이 내리는 날은 드물다.<br>
                     </li>
                     <li>
                         <b>추천 옷차림</b> : 실시간 날씨 체크가 중요하다. 봄이나 가을에는 여름처럼 덥다가도 다음날 온도가 10도 이상 떨어져 두꺼운 재킷이 필요할 때도 있고, 여름에도 비가 오면 제법 쌀쌀해져 얇은 재킷이 필요할 수도. 일교차도 큰 편이니 최저기온과 최고기온을 함께 확인 하자.
@@ -200,7 +215,7 @@
         </div>
     </section>
     <!--==================== 환율 ====================-->
-    <section class="about section" >
+    <section class="about section bg" >
         <div class="about__container container gird gap" id="f_ex">
             <h2 class="section__title about__title"><span>환율 <i class="fa-solid fa-sack-dollar"></i></span></h2>
             <table class="tg">

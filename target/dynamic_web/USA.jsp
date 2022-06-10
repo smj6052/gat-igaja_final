@@ -111,13 +111,27 @@
             <h2 class="section__title about__title">여행 정보 <i class="fa-solid fa-plane"></i></h2>
             <div class="about__data" style="width: 55%; float: left; margin-right: 1em;">
                 <ul class="about__description">
-                    <li>임시로 어쩌구저쩌구</li>
-                    <li>
-                        <b>여행 추천기간</b> :  지역마다 다름
-                        <br>미국이 워낙 넓은 국가라 다양한 기후가 다양하게 존재하므로 여행시기나 지역에 따라 추천 시즌은 달라진다.
-                        동부 뉴욕의 겨울은 영하 20도 이상 내려가고 눈도 많이 오는 반면, 서부 LA의 겨울은 영상 5~10도 내외로 눈이 안온다.
-                        그래서 미국내 내가 가고자 하는 지역의 날씨를 체크해보고 준비를 하면 좋다.
-
+                    <li style="float: left; margin-right:0.5em">
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-plane-departure"></i>  항공</h3> <br>직항 <b>14시간</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-brands fa-cc-visa"></i>  비자</h3> <br>ESTA 필요 <b>90일 무비자</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-plug"></i>  전압</h3> <br>60hz <b>120V</b></li>
+                        </ul>
+                    </li>
+                    <li style="float: left">
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-language"></i>  언어</h3> <br> <b>영어</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-clock"></i>  시차</h3> <br>한국대비 <b>13시간 느림</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-coins"></i>  팁</h3> <br>있음 <b>15%</b></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -128,7 +142,7 @@
     </section>
 
     <!--==================== 코로나 상황 ====================-->
-    <section class="about section" >
+    <section class="about section" style="margin-top: 20em;">
         <div class="about__container container gird gap" id="f_covid">
             <div class="about__data covid_parent" >
                 <h2 class="section__title about__title">코로나 상황 <i class="fa-solid fa-virus"></i></h2>
@@ -219,7 +233,105 @@
         </div>
     </section>
     <section class="gap"></section>
+    <!--==================== 맛집 ====================-->
+    <section class="place section" id="place">
+        <div class="about__container container gird gap" id="uk_rest">
+            <h2 class="section__title about__title">맛집 <i class="fa-solid fa-utensils"></i></h2>
 
+            <div class="place__container container grid">
+                <!------맛집1------>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/25/08/0a/le-cheddar.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 style="margin-top: 7em; color:white;">Il Etait Un Square<br>
+                                3,792<br>
+                                $ - $$ • 프랑스 요리, 스테이크하우스, 유럽 요리<br>
+                                파리, 프랑스</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/7b/97/b5/strlng.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;" >프랑스</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/30/f9/2e/bouchon-tupin.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">아랍</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/90/45/b2/hall-1.jpg?w=400&h=-1&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">필리핀</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/14/54/24/photo0jpg.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title" style="margin-top: 7em;">호주</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/f2/5b/96/sesame-noir.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/c4/67/5c/black-bean-chili.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/4a/f2/75/getlstd-property-photo.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/32/a5/0f/img-20201018-180218-largejpg.jpg?w=400&h=-1&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ad/80/4a/le-pompon.jpg?w=400&h=300&s=1" alt="" class="place__img">
+                    <div class="place__content">
+                        <div class="place__data">
+                            <h3 class="place__title"  style="margin-top: 7em;">미국</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
 
 <!--=============== FOOTER ===============-->
