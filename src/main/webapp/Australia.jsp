@@ -116,30 +116,40 @@
     <section class="about section" id="f_info">
         <div class="about__container container gird">
             <h2 class="section__title about__title">여행 정보 <i class="fa-solid fa-plane"></i></h2>
-            <div class="about__data" style="width: 55%; float: left; margin-right: 1em;">
+            <div class="info_img" style="width: 40%; float: left; margin-left: -2em;">
+                <div id="map"></div>
+            </div>
+            <div class="about__data" style="width: 55%; float: right; ">
                 <ul class="about__description">
-                    <li>임시로 어쩌구저쩌구</li>
-                    <li>
-                        <b>여행 추천기간</b> :  지역마다 다름
-                        <br>미국이 워낙 넓은 국가라 다양한 기후가 다양하게 존재하므로 여행시기나 지역에 따라 추천 시즌은 달라진다.
-                        동부 뉴욕의 겨울은 영하 20도 이상 내려가고 눈도 많이 오는 반면, 서부 LA의 겨울은 영상 5~10도 내외로 눈이 안온다.
-                        그래서 미국내 내가 가고자 하는 지역의 날씨를 체크해보고 준비를 하면 좋다.
-
+                    <li style="float: left; margin-right:0.5em">
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-plane-departure"></i>  항공</h3> <br>직항 <b>10시간</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-brands fa-cc-visa"></i>  비자</h3> <br>ETA 필요 <b>90일 무비자</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-plug"></i>  전압</h3> <br>50hz <b>230V</b></li>
+                        </ul>
+                    </li>
+                    <li style="float: left">
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-language"></i>  언어</h3> <br> <b>영어</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-clock"></i>  시차</h3> <br>한국대비 <b>1시간 빠름</b></li>
+                        </ul>
+                        <ul class="ul_box border_rounded">
+                            <li class="li_box"><h3><i class="fa-solid fa-coins"></i>  팁</h3> <br>없음 <b>10%</b></li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-            <div class="info_img" style="width: 40%; float: right;">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65136545.9243897!2d-141.08977859420528!3d30.376373698916638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2skr!4v1654752005747!5m2!1sen!2skr"
-                            width="295" height="400" style="border:0;"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div>
         </div>
     </section>
 
     <!--==================== 코로나 상황 ====================-->
-    <section class="about section" >
+    <section class="about section" style="margin-top: 20em;">
         <div class="about__container container gird gap" id="f_covid">
             <div class="about__data covid_parent" >
                 <h2 class="section__title about__title">코로나 상황 <i class="fa-solid fa-virus"></i></h2>

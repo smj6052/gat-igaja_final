@@ -210,6 +210,8 @@
     background-color: #F1F1E6;
     padding:1em;
     float: left;
+    width: 30em;
+    text-align: center;
 }
 
 .source{
@@ -221,4 +223,21 @@
 .tg>th{
     background-color: #F9F871;
     border: #59B77D 1px;
+}
+ul.ul_box{
+    margin-bottom: 0.5em;
+}
+li.li_box{
+    padding-top: 0.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.border_rounded {
+    width: 15em;
+    border: 2px solid #114450;
+    padding: 0.5rem;
+    line-height: 1rem;
+}
+.bg{
+    backdrop-filter: url('/assets/img/blob-haikei.svg');
 }
