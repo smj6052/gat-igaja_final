@@ -17,7 +17,7 @@ public class Exchange_Rate {
     private final String url;
     // 드라이버 설치 경로
     public static String WEB_DRIVER_ID = "webdriver.chrome.driver";
-    public static String WEB_DRIVER_PATH = "/opt/homebrew/bin/chromedriver"; // chrome driver 경로 (현재 프로젝트 폴더 안에 있음)
+    public static String WEB_DRIVER_PATH = "C:/Users/SeoMinjung/IdeaProjects/gat-igaja_final/chromedriver.exe"; // chrome driver 경로 (현재 프로젝트 폴더 안에 있음)
 
     public Exchange_Rate(String url) {
 

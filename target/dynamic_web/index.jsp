@@ -102,9 +102,8 @@
   <%--  글자 위치 글자 색 수정 필요--%>
   <%--  하이퍼 링크 추가하기--%>
 
-  <section class="place section" id="place">
+  <section class="place section" id="place" style="margin-bottom: 20em;">
     <h2 class="section__title">Choose Your Place</h2>
-
     <div class="place__container container grid">
       <div class="place__card">
         <img src="assets/img/uk.jpg" alt="" class="place__img">
@@ -180,22 +179,3 @@
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b43fc17fef72c194aae3f51e43211eb7c0364e8

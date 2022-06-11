@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: SeoMinjung
-  Date: 2022-05-31
-  Time: 오후 10:26
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -25,7 +19,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>FranceNews</title>
+        <title>ArabNews</title>
     </head>
 </head>
 <body>
@@ -45,16 +39,15 @@
 
     <!--==================== ABOUT ====================-->
     <section class="about section" id="about">
-<form class="d-flex">
-    <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search news">
-    <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
-</form>
-        <hr>
-        <br><br>
-<div>
-    <div class="row m-3" id="newsType"></div>
-    <div class="row me-2 ms-2" id="newsdetails"></div>
-</div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search news">
+            <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+        </form>
+        <br>
+        <div class="wrapper">
+            <div class="row m-3" id="newsType"></div>
+            <div class="row me-2 ms-2" id="newsdetails"></div>
+        </div>
     </section>
 </main>
 <jsp:include page="footer.jsp"></jsp:include>
